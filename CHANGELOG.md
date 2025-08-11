@@ -1,5 +1,17 @@
 # SimPushbackXP Changelog
 
+## [0.0.15-dev] - 2025-08-10
+### Added
+- **BetterPushback conflict detection**: If another planepath controller is active (e.g., BetterPushback), SimPushbackXP warns and refuses to start to avoid control fights.
+- **Conflict status tool**: Menu item “Conflict status → log” prints whether BetterPushback is present and if the sim’s planepath override is already active.
+
+### Changed
+- Safer start logic: We only enable override when it’s not already owned by another plugin.
+
+---
+## [0.0.14-dev] - 2025-08-10
+- Curved pushback path, ground-level tug placement, override planepath fix, XP12 default tug use.
+
 ## [0.0.13-dev] - 2025-08-10
 ### Added
 - **Default X-Plane 12 tug model support** — no more bundled OBJ file; the plugin now uses built-in library tug objects such as:
@@ -20,8 +32,6 @@
 - Startup crash when selecting a tug type with no corresponding model loaded.
 - Pushback always moving straight back — now direction choices (90°, 180°, compass headings) are properly applied.
 
-### Download
-📦 **Patch download:** [SimPushbackXP_patch_0.0.13-dev.zip](sandbox:/mnt/data/SimPushbackXP_patch_0.0.13-dev.zip)
 
 ### Installation
 1. Extract the zip.
@@ -37,7 +47,6 @@
 
 ---
 ## [0.0.12] - 2025-08-09
-- Added SimLandings branding in code and menus.
 - Included `simlandings.com`, YouTube, and Instagram links in plugin metadata.
 
 ## [0.0.11] - 2025-08-08
